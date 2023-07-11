@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="userinput"><br>
+    <button onclick="myfunction()">submit</button>
+    <p id="mes"></p>
+    <script>
+        function myfunction(){
+            let userinput=document.querySelector("#userinput");
+            let message=document.querySelector("#mes");
+            message.innerHTML=userinput.value;
+
+        }
+    </script>
+</body>
+</html>
